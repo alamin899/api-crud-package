@@ -15,4 +15,4 @@ php artisan vendor:publish api-crud/api-crud-package
 ```
 
 ## Contribution
-You're open to create any Pull request.
+You're open to create any Pull request for contribution.
