@@ -1,5 +1,5 @@
 <?php
-namespace Api\ApiCrudPackage;
+namespace ApiCrud\ApiCrudPackage;
 
 use Illuminate\Support\ServiceProvider;
 
