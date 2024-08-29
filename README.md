@@ -11,7 +11,7 @@ composer require api-crud/api-crud-package
 
 #### Publish configuration
 ```sh
-php artisan vendor:publish api-crud/api-crud-package
+php artisan vendor:publish --tag=generator
 ```
 
 ## Contribution
