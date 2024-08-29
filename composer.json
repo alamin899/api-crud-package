@@ -1,5 +1,5 @@
 {
-  "name": "api/api-crud-package",
+  "name": "api-crud/api-crud-package",
   "description": "Api crud package",
   "type": "composer-plugin",
   "license": "MIT",
@@ -22,11 +22,8 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Api\\ApiCrudPackage\\ApiCrudPackageProvider"
-      ],
-      "aliases": {
-        "Debugbar": "Api\\ApiCrudPackage\\Facade"
-      }
+        "ApiCrud\\ApiCrudPackage\\ApiCrudPackageProvider"
+      ]
     }
   }
 }

@@ -6,12 +6,12 @@ A simple api crud generator using command.
 ## Installation
 
 ```sh
-composer require api/api-crud-package
+composer require api-crud/api-crud-package
 ```
 
 #### Publish configuration
 ```sh
-php artisan vendor:publish api/api-crud-package
+php artisan vendor:publish api-crud/api-crud-package
 ```
 
 ## Contribution
