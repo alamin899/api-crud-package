@@ -1,7 +1,6 @@
 {
   "name": "api-crud/api-crud-package",
   "description": "Api crud package",
-  "type": "composer-plugin",
   "license": "MIT",
   "autoload": {
     "psr-4": {
@@ -16,8 +15,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": "^8.0",
-    "illuminate/support": "^10.0"
+    "php": "^8.0"
   },
   "extra": {
     "laravel": {
