@@ -1,0 +1,32 @@
+{
+  "name": "api/api-crud-package",
+  "description": "Api crud package",
+  "type": "composer-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Api\\ApiCrudPackage\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "alamin899",
+      "email": "alaminhossen899@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Api\\ApiCrudPackage\\ApiCrudPackageProvider"
+      ],
+      "aliases": {
+        "Debugbar": "Api\\ApiCrudPackage\\Facade"
+      }
+    }
+  }
+}
