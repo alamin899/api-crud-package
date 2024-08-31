@@ -14,5 +14,10 @@ composer require api-crud/api-crud-package
 php artisan vendor:publish --tag=generator
 ```
 
+#### Run command for crud file generate
+```sh
+php artisan generate:crud ModelName
+```
+
 ## Contribution
 You're open to create any Pull request for contribution.
