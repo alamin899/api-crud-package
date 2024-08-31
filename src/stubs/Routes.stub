@@ -1,1 +1,5 @@
-Route::apiResource('{{modelNamePluralLowerCase}}', '{{modelName}}Controller');
+<?php
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\{{modelName}}Controller;
+
+Route::apiResource('{{modelNamePluralLowerCase}}', {{modelName}}Controller::class);
