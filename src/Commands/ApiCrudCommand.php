@@ -37,6 +37,7 @@ class ApiCrudCommand extends Command
 
     protected function generateController($name): void
     {
+        $name = Str::ucfirst($name);
         $controllerTemplate = str_replace(
             ['{{modelName}}'],
             [$name],
@@ -48,6 +49,8 @@ class ApiCrudCommand extends Command
 
     protected function generateModel($name): void
     {
+        $name = Str::ucfirst($name);
+
         $modelTemplate = str_replace(
             ['{{modelName}}'],
             [$name],
@@ -59,6 +62,7 @@ class ApiCrudCommand extends Command
 
     protected function generateRequest($name): void
     {
+        $name = Str::ucfirst($name);
         $requestTemplate = str_replace(
             ['{{modelName}}'],
             [$name],
@@ -70,6 +74,7 @@ class ApiCrudCommand extends Command
 
     protected function generateMigration($name): void
     {
+        $name = Str::lower($name);
         $tableName = strtolower(Str::plural($name));
         $migrationTemplate = str_replace(
             ['{{tableName}}'],
@@ -83,6 +88,7 @@ class ApiCrudCommand extends Command
 
     protected function updateRoutes($name): void
     {
+        $name = Str::ucfirst($name);
         $routeTemplate = str_replace(
             ['{{modelNamePluralLowerCase}}', '{{modelName}}'],
             [strtolower(Str::plural($name)), $name],
