@@ -1,0 +1,18 @@
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class {{modelName}}Request extends FormRequest
+{
+    public function authorize(): bool
+    {
+        return true;
+    }
+    public function rules()
+    {
+        return [
+            'field1' => 'required|string',
+            'field2' => 'required|string',
+        ];
+    }
+}
