@@ -95,6 +95,6 @@ class ApiCrudCommand extends Command
 
     protected function getStub($type)
     {
-        return File::get(__DIR__."/../../stubs/$type.stub");
+        return File::get(__DIR__."/../stubs/$type.stub");
     }
 }
